@@ -1,0 +1,149 @@
+/* ****For Mobile */
+@media only screen and (max-width:600px) {
+
+
+    .site {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "featured"
+            "main"
+            "sidebar"
+            "footer"
+        ;
+
+    }
+
+    header {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "logo"
+            "nav";
+    }
+
+    .logo {
+        grid-area: logo;
+
+    }
+
+    nav {
+        grid-area: nav;
+
+    }
+
+    .featuredimg {
+        grid-area: featured;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: sidebar;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/* For Desktop */
+@media only screen and (min-width: 1024px) and (min-width: 950px) {
+    .site {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 100px 100px auto auto auto;
+        grid-template-areas:
+            "header header nav nav"
+            "header header nav nav"
+            "featuredimg featuredimg featuredimg featuredimg"
+            "main main main sidebar"
+            "footer footer footer footer"
+        ;
+        grid-gap: 20px;
+    }
+
+    header {
+
+        grid-area: header;
+
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .featuredimg {
+        grid-area: featuredimg;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: sidebar;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 850px) and (max-width:1024px) {
+    .site {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 100px 100px auto auto auto;
+        grid-template-areas:
+            "header header nav nav"
+            "header header nav nav"
+            "featuredimg featuredimg featuredimg featuredimg"
+            "main main main sidebar"
+            "footer footer footer footer"
+        ;
+        grid-gap: 20px;
+    }
+
+    header {
+
+        grid-area: header;
+
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .featuredimg {
+        grid-area: featuredimg;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: sidebar;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
